@@ -5,12 +5,28 @@ labels: ["bug"]
 type: Bug
 assignees: []
 body:
-  - type: input
-    id: package-version
+  - type: dropdown
+    id: package
     attributes:
-      label: Package & version
-      description: e.g. @rocketcommunicationsinc/astrouxds-nova-react@0.9.1
-      placeholder: "@rocketcommunicationsinc/astrouxds-nova-react@0.9.1"
+      label: Package
+      options:
+        - "@rocketcommunicationsinc/astrouxds-nova-react"
+        - "@rocketcommunicationsinc/astrouxds-nova-angular"
+        - "@rocketcommunicationsinc/astrouxds-nova-react-pro"
+        - "@rocketcommunicationsinc/astrouxds-nova-angular-pro"
+        - "@rocketcommunicationsinc/astrouxds-nova-icons"
+        - "@rocketcommunicationsinc/astrouxds-nova-styles"
+        - "@rocketcommunicationsinc/astrouxds-nova-tokens"
+        - "@rocketcommunicationsinc/astrouxds-nova-types"
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: The exact package version, e.g. 0.9.1
+      placeholder: "0.9.1"
     validations:
       required: true
 
