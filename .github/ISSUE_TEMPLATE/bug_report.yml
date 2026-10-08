@@ -1,0 +1,80 @@
+name: Bug report
+description: Report a problem with an Astro UXDS Nova package
+title: "[Bug] "
+labels: ["bug"]
+type: Bug
+assignees: []
+body:
+  - type: input
+    id: package-version
+    attributes:
+      label: Package & version
+      description: e.g. @rocketcommunicationsinc/astrouxds-nova-react@0.9.1
+      placeholder: "@rocketcommunicationsinc/astrouxds-nova-react@0.9.1"
+    validations:
+      required: true
+
+  - type: textarea
+    id: describe-bug
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: To reproduce
+      description: Steps to reproduce the behavior, or a minimal repro link (CodeSandbox, StackBlitz, GitHub repo).
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain your problem.
+    validations:
+      required: false
+
+  - type: input
+    id: framework-version
+    attributes:
+      label: Framework and version
+      placeholder: e.g. React 19, Angular 20
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+    validations:
+      required: false
+
+  - type: input
+    id: os
+    attributes:
+      label: OS
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+    validations:
+      required: false
